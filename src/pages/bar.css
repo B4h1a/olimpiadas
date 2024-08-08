@@ -1,0 +1,114 @@
+/* Barra lateral */
+.menu-lateral {
+    width: 50px; /* Largura inicial da barra lateral */
+    height: 100%;
+    background-color: black;
+    padding: 40px 0;
+    box-shadow: 3px 0 0 red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s; /* Transição suave */
+}
+
+/* Expansão da barra lateral ao passar o mouse */
+.menu-lateral:hover {
+    width: 300px; /* Largura quando expandido */
+}
+
+/* Estilos dos botões */
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.btn-expandir > i {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Estilos da lista de itens */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Alinha os itens na coluna */
+}
+
+/* Define a altura dos itens e o espaçamento */
+ul li {
+    transition: background-color 0.2s;
+    height: 66px;
+    position: relative;
+}
+
+/* Itens ativos e hover */
+ul li.ativo {
+    background-image: linear-gradient(to right, red 3%, black 3%);
+}
+
+ul li.item-menu:hover {
+    background-image: linear-gradient(to right, red 3%, black 3%);
+}
+
+/* Estilos dos links */
+ul li.item-menu a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    align-items: center;
+    transition: padding 0.3s;
+}
+
+/* Texto dos links */
+ul li.item-menu a .txt-link {
+    margin-left: 0;
+    opacity: 0;
+    transition: margin-left 0.5s, opacity 0.3s;
+}
+
+.menu-lateral:hover .txt-link {
+    opacity: 1;
+    margin-left: 20px; /* Ajuste conforme necessário */
+}
+
+/* Estilos do submenu */
+.submenu {
+    max-height: 0; /* Esconde o submenu inicialmente */
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: max-height 0.3s ease-out, transform 0.3s ease-out; /* Transição suave para expansão e movimentação */
+    transform: translateX(-800%); /* Move o submenu para fora da tela */
+
+}
+
+.menu-lateral:hover .submenu {
+    transform: translateX(0); /* Move o submenu de volta para a tela quando a barra lateral está expandida */
+}
+
+.submenu.open {
+    max-height: 500px; /* Altura máxima suficiente para exibir todos os itens do submenu */
+    transition: max-height 0.3s ease-in; /* Transição suave para a expansão */
+}
+
+.submenu li {
+    height: 40px;
+}
+
+.submenu li a {
+    height: 0.01px;
+}
+
+.submenu li a:hover {
+    background-image: linear-gradient(to right, red 1%, black 1%);
+}
