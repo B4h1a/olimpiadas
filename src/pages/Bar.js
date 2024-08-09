@@ -46,7 +46,7 @@ function Bar() {
               <span className="txt-link">Esportes</span>
             </a>
             <ul className={`submenu ${isSportsOpen ? 'open' : ''}`}>
-              {['Futsal', 'Handebol', 'Vôlei', 'Queimada', 'Basquete', 'Futmesa', 'Tênis_de_Mesa', 'Atletismo'].map((sport, index) => (
+              {['Futsal', 'Handebol', 'Vôlei', 'Queimada', 'Basquete', 'Futmesa', 'Tênis/Mesa', 'Atletismo'].map((sport, index) => (
                 <li key={index}><a href={`/${sport.toLowerCase()}`}>{sport}</a></li>
               ))}
             </ul>

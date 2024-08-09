@@ -3,11 +3,6 @@
   padding: 20px;
 }
 
-h1 {
-  color: #333;
-  margin-bottom: 40px;
-}
-
 .group-stage {
   display: flex;
   flex-direction: row;
@@ -38,11 +33,11 @@ table .grupo1 {
 th, td {
   padding: 10px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid black;
 }
 
 th {
-  background-color: #4CAF50;
+  background-color: red;
   color: white;
 }
 

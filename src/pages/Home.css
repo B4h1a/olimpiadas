@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .texto {
+    position: absolute;
+    color: red;
+    margin-top: 500px;
+    margin-left: 550px;
+    font-size: 45px;
+    z-index: 1;
+  }
+  
+  .texto2 {
+    position: absolute;
+    width: 93.5%;
+    color: black;
+    margin-top: 535px;
+    background-color: #e7e7e7;
+    padding: 39.3px;
+  }
+  
+  .data {
+    left: 185px;
+    top: 800px;
+    height: 1430px;
+    width: 90%; /* Ajusta a largura conforme necessário */
+    max-width: 1200px; /* Define a largura máxima para não ultrapassar a tela do notebook */
+    margin: 20px auto; /* Centraliza a div horizontalmente e adiciona espaçamento vertical */
+    padding: 20px;
+    border: 2px solid red; /* Define a borda vermelha */
+    box-sizing: border-box; /* Inclui a borda e o padding na largura total da div */
+    background-color: #f9f9f9; /* Opcional: cor de fundo para destacar o conteúdo */
+    position: absolute; /* Permite que a div fique abaixo do carrossel */
+  }
+  .tabela-home{
+    top:2300px;
+    position: absolute;
+    margin-left: 550px;
+  }
+  /* Estilo para a tabela */
+.grupo5 {
+    width: 100%; /* Faz com que a tabela ocupe toda a largura disponível */
+    border-collapse: collapse; /* Remove o espaçamento entre as bordas das células */
+    margin: 20px 0; /* Adiciona um espaço acima e abaixo da tabela */
+  }
+  
+  /* Estilo para os cabeçalhos da tabela */
+  .grupo5 thead th {
+    
+    background-color: red; /* Cor de fundo verde para os cabeçalhos */
+    color: white; /* Texto branco */
+    padding: 15px; /* Espaçamento interno das células do cabeçalho */
+    text-align: center; /* Alinha o texto ao centro */
+    border: 5px solid #ffff; /* Borda fina e cinza claro */
+    font-size: 18px; /* Tamanho da fonte */
+  }
+  .bordinha{border-top-left-radius: 17px;border: none;}
+  .bordinha2{border-top-right-radius: 17px;}
+  
+  /* Estilo para as células da tabela */
+  .grupo5 td {
+    padding: 15px; /* Espaçamento interno das células */
+    border:2px solid #ffff; /* Borda fina e cinza claro */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  /* Estilo para as linhas da tabela */
+  .grupo5 tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo cinza claro para linhas pares */
+  }
+  
+  .grupo5 tbody tr:hover {
+    background-color: #ffff; /* Cor de fundo cinza mais escuro ao passar o mouse */
+  }
+  
+  /* Estilo específico para as células com a classe td5 */
+  .td5 { 
+    color: #333; /* Cor do texto mais escura */
+  }
+  #futsal{
+    border-radius: 10px;
+    background-color: red;
+    height: 40px;
+    width: 500px;
+    margin-left: 325px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+  #futsal2{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    margin-left: 475px;
+  }
+  .data img{
+    position: absolute;
+  }
+  #fut{
+    left: 10px;
+  }
+  #voley{
+    top: 250px;
+    left: 900px;
+  }
+  #basquete{
+    left:-50px;
+    top: 560px;
+  }
+  #queimada{
+    left: 930px;
+    top: 870px;
+  }
+  #corrida{
+    top: 1140px;
+    left: 10px;
+  }
+  .data h1{
+    color: red;
+    font-size: 40px;
+  }

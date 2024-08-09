@@ -22,12 +22,12 @@ function FaseGrupo() {
             </thead>
             <tbody>
               <tr>
-                <td>Time A1</td>
-                <td>3</td>
-                <td>2</td>
-                <td>1</td>
-                <td>0</td>
-                <td>7</td>
+                <td className='td1'>Time A1</td>
+                <td className='td1'>3</td>
+                <td className='td1'>2</td>
+                <td className='td1'>1</td>
+                <td className='td1'>0</td>
+                <td className='td1'>7</td>
               </tr>
               <tr>
                 <td>Time A2</td>
@@ -38,12 +38,12 @@ function FaseGrupo() {
                 <td>4</td>
               </tr>
               <tr>
-                <td>Time A3</td>
-                <td>3</td>
-                <td>1</td>
-                <td>0</td>
-                <td>2</td>
-                <td>3</td>
+                <td className='td1'>Time A3</td>
+                <td className='td1'>3</td>
+                <td className='td1'>1</td>
+                <td className='td1'>0</td>
+                <td className='td1'>2</td>
+                <td className='td1'>3</td>
               </tr>
               <tr>
                 <td>Time A4</td>
@@ -72,12 +72,12 @@ function FaseGrupo() {
             </thead>
             <tbody>
               <tr>
-                <td>Time B1</td>
-                <td>3</td>
-                <td>3</td>
-                <td>0</td>
-                <td>0</td>
-                <td>9</td>
+                <td className='td1'>Time B1</td>
+                <td className='td1'>3</td>
+                <td className='td1'>3</td>
+                <td className='td1'>0</td>
+                <td className='td1'>0</td>
+                <td className='td1'>9</td>
               </tr>
               <tr>
                 <td>Time B2</td>
@@ -88,12 +88,12 @@ function FaseGrupo() {
                 <td>4</td>
               </tr>
               <tr>
-                <td>Time B3</td>
-                <td>3</td>
-                <td>1</td>
-                <td>0</td>
-                <td>2</td>
-                <td>3</td>
+                <td className='td1'>Time B3</td>
+                <td className='td1'>3</td>
+                <td className='td1'>1</td>
+                <td className='td1'>0</td>
+                <td className='td1'>2</td>
+                <td className='td1'>3</td>
               </tr>
               <tr>
                 <td>Time B4</td>

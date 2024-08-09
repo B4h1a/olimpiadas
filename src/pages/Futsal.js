@@ -5,7 +5,7 @@ import FaseGrupo from './FaseGrupo';
 function Futsal() {
   return (
     <div className="App">
-      <h1>Torneio de Futebol</h1>
+      <h1>Torneio de Futsal</h1>
       <FaseGrupo/>
       {/* Fase de Grupos */}
       <div className="fase-de-grupos">
@@ -21,10 +21,10 @@ function Futsal() {
           </thead>
           <tbody>
             <tr>
-              <td>A</td>
-              <td>Time A</td>
-              <td>2 - 1</td>
-              <td>Time B</td>
+              <td className='td1'>A</td>
+              <td className='td1'>Time A</td>
+              <td className='td1'>2 - 1</td>
+              <td className='td1'>Time B</td>
             </tr>
             <tr>
               <td>A</td>
@@ -50,9 +50,9 @@ function Futsal() {
           </thead>
           <tbody>
             <tr>
-              <td>Time A</td>
-              <td>1 - 1 (3-4 pênaltis)</td>
-              <td>Time C</td>
+              <td className='td1'>Time A</td>
+              <td className='td1'>1 - 1 (3-4 pênaltis)</td>
+              <td className='td1'>Time C</td>
             </tr>
             <tr>
               <td>Time B</td>
@@ -77,9 +77,9 @@ function Futsal() {
           </thead>
           <tbody>
             <tr>
-              <td>Time C</td>
-              <td>1 - 2</td>
-              <td>Time B</td>
+              <td className='td1'>Time C</td>
+              <td className='td1'>1 - 2</td>
+              <td className='td1'>Time B</td>
             </tr>
             {/* Adicione mais jogos conforme necessário */}
           </tbody>

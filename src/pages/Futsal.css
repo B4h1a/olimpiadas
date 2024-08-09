@@ -13,15 +13,17 @@
     border: 1px solid black;
   }
   
-  th, td {
+  th {
     padding: 10px;
     text-align: center;
   }
-  
-  h1 {
-    color: #333;
+  .td1{
+    background-color: rgba(0, 0, 0, 0.1) ;
+    border: 1px solid black;
   }
-  
+  td{
+    border: 1px solid black;
+  }
   h2 {
     margin-top: 40px;
     color: #555;

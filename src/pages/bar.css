@@ -11,6 +11,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    z-index: 1000;
     transition: width 0.3s; /* Transição suave */
 }
 

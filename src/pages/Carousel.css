@@ -1,0 +1,81 @@
+*{
+    margin-left: 50px;
+}
+
+.carousel {
+    right: 0; /* Coloca o carrossel no lado direito da página */
+    margin-top: 229px; /* Ajuste conforme necessário */
+    transform: translateY(-50%); /* Ajusta a posição vertical para centralizar */
+    width: 101.28%; /* Ajuste conforme necessário */
+    overflow: hidden;
+  }
+  
+  .carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ajuste o preenchimento da imagem para cobrir o container */
+    display: block; /* Remove espaços em branco indesejados ao redor da imagem */
+  }
+  
+  .carousel-item::before {
+    content: ''; /* Necessário para exibir o pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.400), /* Cor do gradiente com opacidade */
+      rgba(0, 0, 0, 0.400) /* Cor final do gradiente */
+    );
+    z-index: 1; /* Coloca o gradiente sobre a imagem */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 0%;
+    width: 10%;
+    margin-right: -20px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Mantém os botões sobre a imagem e o gradiente */
+    font-size: 40px;
+  }
+  
+  .prev {
+    left: -20px;
+  }
+  
+  .next {
+    right: -20px;
+  }
+  
+  .titulo {
+    color: red;
+  }
+
+  .resumo{
+    background-color: #E7E7E7;
+    padding: 40px;
+    font-size: 36px;
+    width: 700px;
+  }
+  .container{
+    width: 97.4%;
+    position: absolute;
+  }
