@@ -1,126 +1,803 @@
 * {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 96.7%;
+  margin-left: 50px;
+}
+
+.texto {
+  font-family: cursive;
+  color: red;
+  font-size: 45px;
+  margin-top: -90px;
+  margin-bottom: -24px;
+}
+
+.cinza {
+  margin-top: 120px;
+}
+
+.texto2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: #e7e7e7;
+  padding: 20px;
+  width: 100%;
+  /* Ajusta a largura para considerar a sidebar */
+  box-sizing: border-box;
+  /* Para garantir que padding não afete a largura total */
+}
+
+.salas {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+}
+
+.salas2 {
+  flex-direction: column;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 80px;
+  width: 250px;
+  height: 280px;
+  border: black 1px solid;
+}
+
+#salas3 {
+  font-family: sans-serif;
+  margin-top: -150px;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.tabela-home {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.grupo5 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grupo5 thead th {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border: 5px solid #ffff;
+  font-size: 18px;
+}
+
+.bordinha {
+  border-top-left-radius: 17px;
+  border: none;
+}
+
+.bordinha2 {
+  border-top-right-radius: 17px;
+}
+
+.grupo5 td {
+  padding: 15px;
+  border: 2px solid #ffff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.grupo5 tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.grupo5 tbody tr:hover {
+  background-color: #ffff;
+}
+
+.td5 {
+  color: #333;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+
+#futsal {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: red;
+  height: 40px;
+  width: 500px;
+  margin: auto;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#futsal img {
+  margin-top: -9.5px;
+  width: 55px;
+  height: 59px;
+}
+
+#futsal2 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 70px;
+  margin: auto;
+}
+
+.data img {
+  width: 30px;
+  /* Faz as imagens se ajustarem ao container */
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  border: 1px black solid;
+}
+
+@media (max-width: 360px) {
+
+  /* Global Reset */
+  * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
-  
+  .app-home{
+    margin-left: 50px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Sidebar e Container */
+  .container {
+    width: 96.73%;
+    margin-top: 50px;
+  }
+
   .texto {
-    position: absolute;
+    font-family: cursive;
     color: red;
-    margin-top: 500px;
-    margin-left: 550px;
-    font-size: 45px;
-    z-index: 1;
+    font-size: 28px;
+    /* Ajuste para telas menores */
+    margin-top: 10px;
+    /* Ajustado para telas menores */
+    margin-bottom: 10px;
+    /* Ajustado para telas menores */
   }
-  
+
+  .cinza {
+    margin-top: -11px;
+    /* Ajustar conforme necessário */
+  }
+
   .texto2 {
-    position: absolute;
-    width: 93.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    margin-top: 535px;
     background-color: #e7e7e7;
-    padding: 39.3px;
+    padding: 15px;
+    /* Reduzido para telas menores */
+    width: 100%;
+    /* Ajusta a largura para considerar a sidebar */
+    box-sizing: border-box;
   }
-  
-  .data {
-    left: 185px;
-    top: 800px;
-    height: 1430px;
-    width: 90%; /* Ajusta a largura conforme necessário */
-    max-width: 1200px; /* Define a largura máxima para não ultrapassar a tela do notebook */
-    margin: 20px auto; /* Centraliza a div horizontalmente e adiciona espaçamento vertical */
-    padding: 20px;
-    border: 2px solid red; /* Define a borda vermelha */
-    box-sizing: border-box; /* Inclui a borda e o padding na largura total da div */
-    background-color: #f9f9f9; /* Opcional: cor de fundo para destacar o conteúdo */
-    position: absolute; /* Permite que a div fique abaixo do carrossel */
+
+  .salas {
+    width: 100%;
+    height: auto;
+    /* Ajustado para telas menores */
+    display: flex;
+    flex-direction: column;
+    /* Ajusta a disposição dos elementos em coluna para telas pequenas */
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    padding: 10px;
+    /* Ajustado para telas menores */
   }
-  .tabela-home{
-    top:2300px;
-    position: absolute;
-    margin-left: 550px;
+
+  .salas2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* Ajustado para telas menores */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    /* Ajustado para telas menores */
+    width: 80%;
+    /* Ajustado para telas menores */
+    height: auto;
+    /* Ajustado para telas menores */
+    border: black 1px solid;
+    padding: 10px;
+    /* Ajustado para telas menores */
+    box-sizing: border-box;
   }
-  /* Estilo para a tabela */
-.grupo5 {
-    width: 100%; /* Faz com que a tabela ocupe toda a largura disponível */
-    border-collapse: collapse; /* Remove o espaçamento entre as bordas das células */
-    margin: 20px 0; /* Adiciona um espaço acima e abaixo da tabela */
+
+  #salas3 {
+    font-family: sans-serif;
+    margin-top: 10px;
+    /* Ajustado para telas menores */
+    font-size: 24px;
+    /* Ajustado para telas menores */
+    font-weight: 100;
   }
-  
-  /* Estilo para os cabeçalhos da tabela */
+
+  .tabela-home {
+    margin: 10px auto;
+    width: 100%;
+    overflow-x: auto;
+    /* Permite rolar horizontalmente se necessário */
+  }
+
+  .grupo5 {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
   .grupo5 thead th {
-    
-    background-color: red; /* Cor de fundo verde para os cabeçalhos */
-    color: white; /* Texto branco */
-    padding: 15px; /* Espaçamento interno das células do cabeçalho */
-    text-align: center; /* Alinha o texto ao centro */
-    border: 5px solid #ffff; /* Borda fina e cinza claro */
-    font-size: 18px; /* Tamanho da fonte */
+    background-color: red;
+    color: white;
+    padding: 10px;
+    /* Reduzido para telas menores */
+    text-align: center;
+    border: 3px solid #ffff;
+    /* Ajustado para telas menores */
+    font-size: 14px;
+    /* Ajustado para telas menores */
   }
-  .bordinha{border-top-left-radius: 17px;border: none;}
-  .bordinha2{border-top-right-radius: 17px;}
-  
-  /* Estilo para as células da tabela */
+
+  .bordinha {
+    border-top-left-radius: 10px;
+    border: none;
+  }
+
+  .bordinha2 {
+    border-top-right-radius: 10px;
+  }
+
   .grupo5 td {
-    padding: 15px; /* Espaçamento interno das células */
-    border:2px solid #ffff; /* Borda fina e cinza claro */
-    text-align: center; /* Alinha o texto ao centro */
-    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px;
+    /* Reduzido para telas menores */
+    border: 1px solid #ffff;
+    /* Ajustado para telas menores */
+    text-align: center;
+    font-size: 12px;
+    /* Ajustado para telas menores */
   }
-  
-  /* Estilo para as linhas da tabela */
+
   .grupo5 tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo cinza claro para linhas pares */
+    background-color: rgba(0, 0, 0, 0.1);
   }
-  
+
   .grupo5 tbody tr:hover {
-    background-color: #ffff; /* Cor de fundo cinza mais escuro ao passar o mouse */
+    background-color: #ffff;
   }
-  
-  /* Estilo específico para as células com a classe td5 */
-  .td5 { 
-    color: #333; /* Cor do texto mais escura */
+
+  .td5 {
+    color: #333;
   }
-  #futsal{
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 10px;
+    /* Reduzido para telas menores */
+    width: calc(100% - 50px);
+    /* Ajusta a largura para considerar a sidebar */
+    max-width: 100%;
+    background-color: #f9f9f9;
+    border: 2px solid red;
+    box-sizing: border-box;
+  }
+
+  #futsal {
     border-radius: 10px;
     background-color: red;
-    height: 40px;
-    width: 500px;
-    margin-left: 325px;
-    font-size: 30px;
+    height: 30px;
+    /* Ajustado para telas menores */
+    width: 80%;
+    /* Ajustado para telas menores */
+    margin: 10px auto;
+    /* Ajustado para telas menores */
+    font-size: 20px;
+    /* Ajustado para telas menores */
     font-weight: bold;
-    margin-top: 80px;
   }
-  #futsal2{
+
+  #futsal2 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: black;
     color: white;
-    width: 200px;
-    margin-left: 475px;
+    width: 80%;
+    /* Ajustado para telas menores */
+    height: 50px;
+    /* Ajustado para telas menores */
+    margin: 10px auto;
+    /* Ajustado para telas menores */
   }
-  .data img{
-    position: absolute;
+
+  .data img {
+    width: 20px;
+    /* Ajustado para telas menores */
   }
-  #fut{
-    left: 10px;
+
+  /* Scrollbar Customization */
+  body::-webkit-scrollbar {
+    width: 8px;
+    /* Ajustado para telas menores */
   }
-  #voley{
-    top: 250px;
-    left: 900px;
+
+  body::-webkit-scrollbar-track {
+    background: black;
   }
-  #basquete{
-    left:-50px;
-    top: 560px;
+
+  #futsal img {
+    margin-top: -8px;
+    width: 55px;
+    height: 46px;
   }
-  #queimada{
-    left: 930px;
-    top: 870px;
+
+  body::-webkit-scrollbar-thumb {
+    background-color: red;
+    border: 1px black solid;
   }
-  #corrida{
-    top: 1140px;
-    left: 10px;
+
+
+  .container {
+    margin-left: 0;
+    width: 100%;
   }
-  .data h1{
-    color: red;
-    font-size: 40px;
+
+  .texto {
+    font-size: 22px;
+    /* Ajuste para telas muito pequenas */
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
+
+  .texto2 {
+    padding: 10px;
+    /* Ajuste para telas muito pequenas */
+  }
+
+  .salas2 {
+    font-size: 20px;
+    /* Ajuste para telas muito pequenas */
+    width: 90%;
+    /* Ajuste para telas muito pequenas */
+    height: auto;
+    /* Ajuste para telas muito pequenas */
+    padding: 5px;
+    /* Ajuste para telas muito pequenas */
+  }
+
+  #futsal {
+    font-size: 15px;
+    /* Ajuste para telas muito pequenas */
+    height: 30px;
+    /* Ajuste para telas muito pequenas */
+    margin: auto;
+  }
+
+  #futsal2 {
+    font-size: 16px;
+    /* Ajuste para telas muito pequenas */
+    height: 40px;
+    /* Ajuste para telas muito pequenas */
+    width: 125px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 390px) {
+  /* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-home{
+  margin-left: 50px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Sidebar e Container */
+.container {
+  width: 100%;
+  margin:  auto;
+}
+
+.texto {
+  font-family: cursive;
+  color: red;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cinza {
+  margin-top: -5px;
+}
+
+.texto2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: #e7e7e7;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.salas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  padding: 10px;
+}
+
+.salas2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  width: 90%;
+  height: auto;
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#salas3 {
+  font-family: sans-serif;
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.tabela-home {
+  margin: 10px auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.grupo5 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grupo5 thead th {
+  background-color: red;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  border: 2px solid #fff;
+  font-size: 12px;
+}
+
+.bordinha {
+  border-top-left-radius: 10px;
+  border: none;
+}
+
+.bordinha2 {
+  border-top-right-radius: 10px;
+}
+
+.grupo5 td {
+  padding: 8px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 10px;
+}
+
+.grupo5 tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.grupo5 tbody tr:hover {
+  background-color: #fff;
+}
+
+.td5 {
+  color: #333;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  padding: 10px;
+  width: calc(100% - 40px);
+  max-width: 100%;
+  background-color: #f9f9f9;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+#futsal {
+  border-radius: 10px;
+  background-color: red;
+  height: 30px;
+  width: 80%;
+  margin:  auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#futsal2 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  height: 40px;
+  margin:  auto;
+  font-size: 16px;
+}
+
+.data img {
+  width: 20px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  border: 1px black solid;
+}
+
+#futsal img {
+  margin-top: -8px;
+  width: 55px;
+  height: 46px;
+}
+
+}
+@media (max-width:450px) {
+  /* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-home{
+  margin-left: 50px;
+}
+
+/* Container principal */
+.container {
+  width: 100% ; /* Ajusta a largura para um pouco menos que a largura total */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Texto principal */
+.texto {
+  font-family: cursive;
+  color: red;
+  font-size: 29px; /* Ajustado para telas um pouco maiores */
+  margin-top: -60px; /* Ajuste de margem superior */
+  margin-bottom: -16px; /* Ajuste de margem inferior */
+}
+
+/* Estilo do elemento .cinza */
+.cinza {
+  margin-top: 60px; /* Ajuste a margem superior para mais espaço */
+}
+
+/* Texto secundário */
+.texto2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: #e7e7e7;
+  padding: 15px; /* Ajuste do padding para melhor ajuste */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo das seções de salas */
+.salas {
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+}
+
+/* Estilo dos itens dentro da sala */
+.salas2 {
+  flex-direction: column;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Ajuste a justificação para melhor centralização */
+  align-items: center;
+  color: white;
+  font-size: 50px; /* Reduzido o tamanho da fonte para melhor ajuste */
+  width: 200px; /* Ajuste a largura */
+  height: 240px; /* Ajuste a altura */
+  border: 1px solid black;
+}
+
+/* Estilo do elemento #salas3 */
+#salas3 {
+  font-family: sans-serif;
+  margin-top: -100px; /* Ajuste da margem superior */
+  font-size: 45px; /* Ajuste o tamanho da fonte */
+  font-weight: 100;
+}
+  /* Estilo da tabela home */
+  .tabela-home {
+    overflow-x: auto; /* Adiciona rolagem horizontal */
+    margin: auto;
+    max-width: 100%;
+  }
+
+  /* Estilo da tabela grupo5 */
+  /* Estilo da tabela home */
+  .tabela-home {
+    overflow-x: auto; /* Adiciona rolagem horizontal */
+    margin: auto;
+    max-width: 100%;
+  }
+
+  /* Estilo da tabela grupo5 */
+  .grupo5 {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .grupo5 thead th {
+    background-color: red;
+    color: white;
+    padding: 6px; /* Ajuste o padding */
+    text-align: center;
+    border: 1px solid #ffff;
+    font-size: 12px; /* Ajuste o tamanho da fonte */
+  }
+
+  .bordinha {
+    border-top-left-radius: 8px; /* Ajuste o raio das bordas */
+    border: none;
+  }
+
+  .bordinha2 {
+    border-top-right-radius: 8px; /* Ajuste o raio das bordas */
+  }
+
+  .grupo5 td {
+    padding: 6px; /* Ajuste o padding */
+    border: 1px solid #ffff;
+    text-align: center;
+    font-size: 10px; /* Ajuste o tamanho da fonte */
+  }
+
+  .grupo5 tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .grupo5 tbody tr:hover {
+    background-color: #ffff;
+  }
+
+  .td5 {
+    color: #333;
+  }
+
+/* Estilo do contêiner de dados */
+.data {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto; /* Ajuste a margem */
+  padding: 15px; /* Ajuste o padding */
+  max-width: 100%;
+  background-color: #f9f9f9;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+/* Estilo do elemento #futsal */
+#futsal {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: red;
+  height: 30px; /* Ajuste a altura */
+  width: 230px; /* Ajuste a largura */
+  margin: auto;
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+  font-weight: bold;
+}
+
+/* Imagens dentro do #futsal */
+#futsal img {
+  margin-top: -8px; /* Ajuste a margem superior */
+  width: 45px; /* Ajuste a largura */
+  height: 45px; /* Ajuste a altura */
+}
+
+/* Estilo do elemento #futsal2 */
+#futsal2 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 180px; /* Ajuste a largura */
+  height: 60px; /* Ajuste a altura */
+  margin: auto;
+}
+
+/* Imagens dentro do contêiner de dados */
+.data img {
+  width: 25px; /* Ajuste a largura das imagens */
+}
+
+/* Customização da scrollbar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  border: 1px black solid;
+}
+
+}

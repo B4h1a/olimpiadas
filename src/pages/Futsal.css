@@ -1,6 +1,7 @@
 .App {
     text-align: center;
-    padding: 20px;
+    padding: 0;
+    margin:0;
   }
   
   table {
@@ -28,4 +29,27 @@
     margin-top: 40px;
     color: #555;
   }
+  .banner{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+
+  }
+  #menu h1{
+    font-size: 3em;
+    color: red;
+    padding: 100px;
+    margin-top: -230px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+  }
+  #reparticao{
+    background-color: #CF1919;
+    width: 100%;
+  }
+  
+
+  
+
   

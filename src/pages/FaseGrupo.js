@@ -4,7 +4,7 @@ import './FaseGrupo.css';
 function FaseGrupo() {
   return (
     <div className="App">
-      <h1>Tabela da Fase de Grupos</h1>
+
       
       <div className="group-stage">
         <div className="group">

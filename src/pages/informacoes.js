@@ -1,0 +1,84 @@
+import React from 'react';
+import './informacoes.css';
+import Logo from '../assets/logo2.png';
+import Footer from './Footer';
+import victor from '../assets/victor.png';
+import vinicius from '../assets/vinicius.png';
+import jao from '../assets/jao.png';
+import pedro from '../assets/pedro.png';
+import lais from '../assets/lais.png';
+import nicoli from '../assets/nicoli.png';
+import stevan from '../assets/stevan.png';
+import gabriela from '../assets/gabriela.png';
+
+function Informacoes() {
+    return (
+        <div className='App-container'>
+            <div className='App-info'>
+                <div className='traco'></div>
+                <br />
+                <img style={{ width: '100% 100%' }} src={Logo} alt="Logo" />
+                <div className='linha'></div>
+                <p className='grosso'>
+                    Bem-vindo ao SESI Interclasse! Somos uma comunidade apaixonada por competições saudáveis e diversão entre amigos, onde estudantes de diferentes classes se reúnem para mostrar suas habilidades e espírito de equipe.
+                </p>
+                <p className='escrito-normal'>
+                    Nosso objetivo é promover a integração e a camaradagem entre os alunos através de competições emocionantes e desafiadoras. Acreditamos que o esporte e os jogos são formas poderosas de construir laços, desenvolver habilidades e criar memórias inesquecíveis.
+                </p>
+                <div className='container-vermelho'>
+                    <h1 className='titulozin'>Nossa Missão e Visão</h1>
+                    <p className='dps-titulo'>
+                        Fomentar o espírito de equipe, a competitividade saudável e o respeito mútuo entre os participantes. Queremos que cada interclasse seja uma experiência única e inesquecível para todos os envolvidos.
+                        E temos como visão, ser reconhecidos como o principal evento interclasse da região, onde a diversão, o respeito e a amizade andam de mãos dadas com a competição.
+                    </p>
+                    <h1 className='titulozin'>Nossos Valores</h1>
+                    <p className='dps-titulo'>
+                        Esporte e Diversão: Competir com entusiasmo e alegria, sempre valorizando o espírito esportivo.<br />
+                        Inclusão: Garantir que todos os alunos, independentemente de suas habilidades, tenham a oportunidade de participar e brilhar.<br />
+                        Respeito: Tratar todos os participantes, organizadores e espectadores com consideração e dignidade.<br />
+                        Crescimento Pessoal: Encorajar o desenvolvimento de habilidades sociais e emocionais através da competição.
+                    </p>
+                </div>
+                <h1 className='negrito'>Estamos aqui para proporcionar uma experiência única que vai além do jogo,<br></br> 
+                unindo estudantes e criando memórias que durarão para sempre.<br></br>
+                Participe e seja parte dessa incrível jornada!</h1>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <h1 style={{color:'red'}}>Equipe Multimídia</h1>
+                <br></br>
+                <div style={{display:'flex',flexDirection:'row', gap:'10px'}}className='fotos'>
+                    <img src={gabriela}></img>
+                    <img src={stevan}></img>
+                    <img src={nicoli}></img>
+                    <img src={lais}></img>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <h1 style={{color:'red'}}>Equipe Desenvolvimento de Sistemas</h1>
+                <br></br>
+                <div style={{display:'flex',flexDirection:'row', gap:'10px'}}className='fotos'>
+                <img src={victor}></img>
+                <img src={jao}></img>
+                <img src={vinicius}></img>
+                <img src={pedro}></img>
+                </div>
+                <br></br>
+                <br></br>
+                <h2>É no presente que o SESI constrói o futuro da educação e do trabalho</h2>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </div>
+            <Footer />
+        </div>
+    );
+}
+
+export default Informacoes;

@@ -1,0 +1,60 @@
+.App-info {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.traco {
+    background-color: red;
+    height: 35px;
+    width: 100%; /* Garante que a largura é suficiente para ser visível */
+}
+
+.linha {
+    margin-top: 45px;
+    background-color: red;
+    height: 1px;
+    width: 100%; /* Garante que a largura da linha é suficiente */
+}
+
+.grosso {
+    font-weight: bold;
+    width: 1160px;
+}
+
+.escrito-normal {
+    text-align: center; /* Centraliza o texto */
+    width: 950px;
+    margin: 0 20px; /* Adiciona margens laterais para melhor espaçamento */
+}
+
+.container-vermelho {
+    background-color: red;
+    max-width: 1300px; /* Define uma largura máxima */
+    margin: 30px auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex;
+    flex-direction: column; /* Alinha os itens na coluna */
+    text-align: start;
+    color: white; /* Define a cor do texto para contraste */
+}
+
+.titulozin {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+.dps-titulo {
+    text-align: left; /* Alinha o texto à esquerda dentro da container-vermelho */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do parágrafo */
+}
+.fotos img{
+    height: 384px;
+    width: 285px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

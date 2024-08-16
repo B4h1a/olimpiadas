@@ -3,7 +3,9 @@ import "../Example.css";
 
 function Example() {
   return (
-    <div className="example"></div>
+    <div className="example">
+    
+    </div>
       
   );
 }

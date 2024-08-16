@@ -6,13 +6,12 @@ import Banner from '../assets/futsal.jpg';
 import Reparticao from '../assets/reparticao.png'
 import Footer from './Footer';
 
-function Futsal() {
+function Handebol() {
   return (
     <div className="App">
-      
       <div id='menu'>
       <img className='banner' src={Banner}></img>
-      <h1>TORNEIO DE FUTSAL</h1>
+      <h1>TORNEIO DE HANDEBOL</h1>
       </div>
       <img src={Logo}></img>
       <h2>TABELA DA FASE DE GRUPOS</h2>
@@ -210,4 +209,4 @@ function Futsal() {
   );
   }
 
-export default Futsal;
+export default Handebol;

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import LogoGrupo from '../assets/logogrupo.png';
 import './bar.css';
 import { FaHouseChimney, FaUserGraduate, FaMedal } from "react-icons/fa6";
 import { IoSchoolSharp } from "react-icons/io5";
+import { FaInfoCircle } from "react-icons/fa";
 
 function Bar() {
   const location = useLocation(); // Hook para obter a URL atual
@@ -21,6 +23,11 @@ function Bar() {
           <i className="bi bi-x"></i>
         </div>
         <ul>
+        <li className={`item-menu2`}>
+            <a href="/">
+              <span className="icon"><img src={LogoGrupo}/></span>
+            </a>
+          </li>
           <li className={`item-menu ${isActive('/') ? 'ativo' : ''}`}>
             <a href="/">
               <span className="icon"><FaHouseChimney /></span>
@@ -30,19 +37,19 @@ function Bar() {
           <li className={`item-menu ${isActive('/salas') ? 'ativo' : ''}`}>
             <a href="/salas">
               <span className="icon"><IoSchoolSharp /></span>
-              <span className="txt-link">Salas</span>
+              <span className="txt-link">Equipes</span>
             </a>
           </li>
-          <li className={`item-menu ${isActive('/sobre') ? 'ativo' : ''}`}>
-            <a href="/sobre">
-              <span className="icon"><FaUserGraduate /></span>
-              <span className="txt-link">Sobre</span>
+          <li className={`item-menu ${isActive('/informacoes') ? 'ativo' : ''}`}>
+            <a href="/informacoes">
+              <span className="icon"><FaInfoCircle /></span>
+              <span className="txt-link">Informações</span>
               
             </a>
           </li>
           <li className={`item-menu ${isActive('/esporte') ? 'ativo' : ''}`} onClick={() => setIsSportsOpen(!isSportsOpen)}>
             <a href="#!" onClick={(e) => e.preventDefault()}>
-              <span className="icon"><FaMedal /></span>
+              <span className="icon"><FaMedal/></span>
               <span className="txt-link">Esportes</span>
             </a>
             <ul className={`submenu ${isSportsOpen ? 'open' : ''}`}>
