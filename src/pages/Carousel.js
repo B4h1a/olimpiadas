@@ -1,8 +1,8 @@
 // src/Carousel.js
 import React, { useState } from 'react';
 import './Carousel.css'; // Importa o arquivo de estilos CSS
-import Foto1 from '../assets/img_67_220215_57343bd0-ecae-4955-b3ad-ebdbdadd6aab_o.jpg'; // Importe a imagem local
-import Foto2 from '../assets/carousel2.png'
+import Foto1 from '../assets/carousel2.png'; // Importe a imagem local
+import Foto2 from '../assets/banner.jpg'
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

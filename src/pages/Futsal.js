@@ -1,27 +1,136 @@
 import React from 'react';
 import './Futsal.css';
-import FaseGrupo from './FaseGrupo';
 import Logo from '../assets/logo2.png';
-import Banner from '../assets/futsal.jpg';
+import Banner from '../assets/fundofut.png';
 import Reparticao from '../assets/reparticao.png'
 import Footer from './Footer';
+import Alemanha from '../assets/alemanha.png';
+import Angola from '../assets/angola.png';
+import Brasil from '../assets/brasil.png';
+import Inglaterra from '../assets/inglaterra.png';
+import Italia from '../assets/italia.png';
+import Belgica from '../assets/belgica.png';
+import Canada from '../assets/canada.png';
+import Republica from '../assets/mapa.png';
 
 function Futsal() {
   return (
-    <div className="App">
-      
+    <div className="App-Esporte">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet" />
       <div id='menu'>
-      <img className='banner' src={Banner}></img>
-      <h1>TORNEIO DE FUTSAL</h1>
+        <img className='banner' src={Banner}></img>
       </div>
-      <img src={Logo}></img>
-      <h2>TABELA DA FASE DE GRUPOS</h2>
-      <h3 style={{color:"red", padding:15, fontSize:30}}>MASCULINO</h3>
-      <FaseGrupo/>
+      <h1 className='torneio'>TORNEIO DE FUTSAL</h1>
+      <h3 className='genero'>MASCULINO</h3>
+      <div className="group-stage">
+        <div className="group">
+          <h2 className='font2'>Grupo A</h2>
+          <table class="artilheiros-tabela">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>P</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td >Tima A1</td>
+                <td >3</td>
+                <td >2</td>
+                <td >1</td>
+                <td >0</td>
+                <td >7</td>
+              </tr>
+              <tr>
+                <td>Time A2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td >Time A3</td>
+                <td >3</td>
+                <td >1</td>
+                <td >0</td>
+                <td >2</td>
+                <td >3</td>
+              </tr>
+              <tr>
+                <td>Time A4</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="group">
+          <h2 className='font2'>Grupo B</h2>
+          <table class="artilheiros-tabela">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>P</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Time B1</td>
+                <td >3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>Time B2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Time B3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Time B4</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* Adicione mais grupos conforme necessário */}
+      </div>
       {/* Fase de Grupos */}
       <div className="fase-de-grupos">
-        <h2>Fase de Grupos</h2>
-        <table>
+        <h2 className='font2'>Fase de Grupos</h2>
+        <table class="artilheiros-tabela">
           <thead>
             <tr>
               <th>Grupo</th>
@@ -32,10 +141,10 @@ function Futsal() {
           </thead>
           <tbody>
             <tr>
-              <td className='td1'>A</td>
-              <td className='td1'>Time A</td>
-              <td className='td1'>2 - 1</td>
-              <td className='td1'>Time B</td>
+              <td>A</td>
+              <td>Time A</td>
+              <td>2 - 1</td>
+              <td>Time B</td>
             </tr>
             <tr>
               <td>A</td>
@@ -44,10 +153,10 @@ function Futsal() {
               <td>Time D</td>
             </tr>
             <tr>
-              <td className='td1'>A</td>
-              <td className='td1'>Time A</td>
-              <td className='td1'>2 - 1</td>
-              <td className='td1'>Time B</td>
+              <td>A</td>
+              <td>Time A</td>
+              <td>2 - 1</td>
+              <td>Time B</td>
             </tr>
             <tr>
               <td>A</td>
@@ -62,8 +171,8 @@ function Futsal() {
 
       {/* Semifinais */}
       <div className="semifinais">
-        <h2>Semifinais</h2>
-        <table>
+        <h2 className='font2'>Semifinais</h2>
+        <table class="artilheiros-tabela">
           <thead>
             <tr>
               <th>Time</th>
@@ -73,9 +182,9 @@ function Futsal() {
           </thead>
           <tbody>
             <tr>
-              <td className='td1'>Time A</td>
-              <td className='td1'>2 - 1</td>
-              <td className='td1'>Time C</td>
+              <td >Time A</td>
+              <td >2 - 1</td>
+              <td >Time C</td>
             </tr>
             <tr>
               <td>Time B</td>
@@ -89,8 +198,8 @@ function Futsal() {
 
       {/* Finais */}
       <div className="finais">
-        <h2>Finais</h2>
-        <table>
+        <h2 className='font2'>Finais</h2>
+        <table class="artilheiros-tabela">
           <thead>
             <tr>
               <th>Time</th>
@@ -100,114 +209,218 @@ function Futsal() {
           </thead>
           <tbody>
             <tr>
-              <td className='td1'>Time C</td>
-              <td className='td1'>1 - 2</td>
-              <td className='td1'>Time B</td>
+              <td>Time C</td>
+              <td>1 - 2</td>
+              <td>Time B</td>
             </tr>
             {/* Adicione mais jogos conforme necessário */}
           </tbody>
         </table>
       </div>
       <div id='reparticao'>
-        <img src={Reparticao}/>
+        <img src={Reparticao} />
       </div>
       <div id='menu'>
-      <h3 style={{color:"red", padding:15, fontSize:30}}>FEMININO</h3>
-      <FaseGrupo/>
-      {/* Fase de Grupos */}
-      <div className="fase-de-grupos">
-        <h2>Fase de Grupos</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Grupo</th>
-              <th>Time</th>
-              <th>Placar</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className='td1'>A</td>
-              <td className='td1'>Time A</td>
-              <td className='td1'>2 - 1</td>
-              <td className='td1'>Time B</td>
-            </tr>
-            <tr>
-              <td>A</td>
-              <td>Time C</td>
-              <td>0 - 0</td>
-              <td>Time D</td>
-            </tr>
-            <tr>
-              <td className='td1'>A</td>
-              <td className='td1'>Time A</td>
-              <td className='td1'>2 - 1</td>
-              <td className='td1'>Time B</td>
-            </tr>
-            <tr>
-              <td>A</td>
-              <td>Time C</td>
-              <td>0 - 0</td>
-              <td>Time D</td>
-            </tr>
-            {/* Adicione mais jogos conforme necessário */}
-          </tbody>
-        </table>
-      </div>
+        <br></br>
+        <br></br>
+        <h3 className='genero'>FEMININO</h3>
+        <div className="group-stage">
+        <div className="group">
+          <h2 className='font2'>Grupo A</h2>
+          <table class="artilheiros-tabela">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>P</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td >Time A1</td>
+                <td >3</td>
+                <td >2</td>
+                <td >1</td>
+                <td >0</td>
+                <td >7</td>
+              </tr>
+              <tr>
+                <td>Time A2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td >Time A3</td>
+                <td >3</td>
+                <td >1</td>
+                <td >0</td>
+                <td >2</td>
+                <td >3</td>
+              </tr>
+              <tr>
+                <td>Time A4</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-      {/* Semifinais */}
-      <div className="semifinais">
-        <h2>Semifinais</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Time</th>
-              <th>Placar</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className='td1'>Time A</td>
-              <td className='td1'>2 - 1</td>
-              <td className='td1'>Time C</td>
-            </tr>
-            <tr>
-              <td>Time B</td>
-              <td>2 - 0</td>
-              <td>Time D</td>
-            </tr>
-            {/* Adicione mais jogos conforme necessário */}
-          </tbody>
-        </table>
-      </div>
+        <div className="group">
+          <h2 className='font2'>Grupo B</h2>
+          <table class="artilheiros-tabela">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>P</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Time B1</td>
+                <td >3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>Time B2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Time B3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Time B4</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-      {/* Finais */}
-      <div className="finais">
-        <h2>Finais</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Time</th>
-              <th>Placar</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className='td1'>Time C</td>
-              <td className='td1'>1 - 2</td>
-              <td className='td1'>Time B</td>
-            </tr>
-            {/* Adicione mais jogos conforme necessário */}
-          </tbody>
-        </table>
+        {/* Adicione mais grupos conforme necessário */}
       </div>
-      <Footer/>
-    </div>
+        {/* Fase de Grupos */}
+        <div className="fase-de-grupos">
+          <h2 className='font2'>Fase de Grupos</h2>
+          <table class="artilheiros-tabela">
+            <thead>
+              <tr>
+                <th>Grupo</th>
+                <th>Time</th>
+                <th>Placar</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A</td>
+                <td>Time A</td>
+                <td>2 - 1</td>
+                <td>Time B</td>
+              </tr>
+              <tr>
+                <td>A</td>
+                <td>Time C</td>
+                <td>0 - 0</td>
+                <td>Time D</td>
+              </tr>
+              <tr>
+                <td>A</td>
+                <td>Time A</td>
+                <td>2 - 1</td>
+                <td>Time B</td>
+              </tr>
+              <tr>
+                <td>A</td>
+                <td>Time C</td>
+                <td>0 - 0</td>
+                <td>Time D</td>
+              </tr>
+              {/* Adicione mais jogos conforme necessário */}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Semifinais */}
+        <div className="semifinais">
+          <h2 className='font2'>Semifinais</h2>
+          <table class="artilheiros-tabela">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Placar</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Time A</td>
+                <td>2 - 1</td>
+                <td>Time C</td>
+              </tr>
+              <tr>
+                <td>Time B</td>
+                <td>2 - 0</td>
+                <td>Time D</td>
+              </tr>
+              {/* Adicione mais jogos conforme necessário */}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Finais */}
+        <div className="finais">
+          <h2 className='font2'>Finais</h2>
+          <table class="artilheiros-tabela">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Placar</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Time C</td>
+                <td>1 - 2</td>
+                <td>Time B</td>
+              </tr>
+              {/* Adicione mais jogos conforme necessário */}
+            </tbody>
+          </table>
+        </div>
+        <Footer />
+      </div>
     </div>
   );
-  }
+}
 
 export default Futsal;

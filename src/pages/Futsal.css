@@ -1,4 +1,4 @@
-.App {
+.App-Esporte {
     text-align: center;
     padding: 0;
     margin:0;
@@ -8,6 +8,9 @@
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   table, th, td {
@@ -18,16 +21,8 @@
     padding: 10px;
     text-align: center;
   }
-  .td1{
-    background-color: rgba(0, 0, 0, 0.1) ;
-    border: 1px solid black;
-  }
-  td{
-    border: 1px solid black;
-  }
   h2 {
     margin-top: 40px;
-    color: #555;
   }
   .banner{
     width: 100%;
@@ -36,13 +31,22 @@
     display: block;
 
   }
-  #menu h1{
-    font-size: 3em;
+  .torneio{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: red;
-    padding: 100px;
-    margin-top: -230px;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #000;
+  }
+
+  .genero{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .font2{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   #reparticao{
     background-color: #CF1919;
@@ -50,6 +54,68 @@
   }
   
 
-  
+
+
+
+
 
   
+  .group-stage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Adiciona quebra de linha para tabelas em telas pequenas */
+  }
+  
+  .group {
+    padding: 20px;
+    border-radius: 8px;
+    width: 433px; /* Define uma largura fixa para as tabelas */
+  }
+  
+  table.grupo1 {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as células */
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: none; /* Remove todas as bordas das células */
+  }
+  
+  th {
+    background-color: red; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    font-weight: bold; /* Destaca o texto do cabeçalho */
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Cor de fundo das linhas ímpares */
+  }
+  
+  tbody tr:hover {
+    background-color: #e0e0e0; /* Destaca a linha quando o mouse passa sobre ela */
+  }
+  
+  td {
+    font-size: 1rem; /* Tamanho da fonte das células */
+    color: #555; /* Cor do texto das células */
+  }
+  
+  td.td1 {
+    font-weight: bold; /* Destaca o texto nas células com a classe 'td1' */
+  }
+  
+  
+
+  @media (max-width: 430px) {
+    .App-Esporte{
+      margin-left: 50px;
+    }
+    #reparticao img{
+      background-color: #CF1919;
+      width: 350px;
+    }
+  }

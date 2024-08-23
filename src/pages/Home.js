@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from './Carousel';
-import FaseGrupo from './FaseGrupo';
+import Carousel2 from './Carousel2';
 import './Home.css';
 import Ouro from '../assets/gold-medal.png';
 import Prata from '../assets/silver-medal.png';
@@ -27,6 +27,9 @@ import Footer from './Footer';
 function Home() {
   return (
     <div className='app-home'>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet" />
       <Carousel />
       <div className="container">
       <div className='cinza'>
@@ -36,7 +39,10 @@ function Home() {
         </p>
       </div>
       <div className='data'>
-        <h1>DATAS DOS JOGOS</h1>
+        <h1 style={{color:"red"}}>DATAS DOS JOGOS</h1>
+        <br></br>
+        <br></br>
+        <br></br>
         <p id='futsal'><img src={Brasil}/>Futsal<img src={Alemanha}/></p>
         <p id='futsal2'>01/01/2001<br />As 8 Horas</p>
         <br/>
@@ -70,13 +76,14 @@ function Home() {
         <br/>
         <br/>
       </div>
-      <div className='salas'>
-          <div className='salas2'>9º<div id='salas3'>ANO</div></div>
-          <div className='salas2'>1º<div id='salas3'>ANO</div></div>
-          <div className='salas2'>2º<div id='salas3'>ANO</div></div>
-          <div className='salas2'>3º<div id='salas3'>ANO</div></div>
-      </div>
+      <Carousel2/>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className='tabela-home'>
+        <h1 style={{fontFamily:"Paytone One", color:"red" , textAlign:"center"}}>TABELA GERAL DE PONTOS</h1>
+        <br></br>
+        <br></br>
         <table className="grupo5">
           <thead>
             <tr>

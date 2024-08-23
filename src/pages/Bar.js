@@ -34,8 +34,8 @@ function Bar() {
               <span className="txt-link">Home</span>
             </a>
           </li>
-          <li className={`item-menu ${isActive('/salas') ? 'ativo' : ''}`}>
-            <a href="/salas">
+          <li className={`item-menu ${isActive('/Salas') ? 'ativo' : ''}`}>
+            <a href="/Salas">
               <span className="icon"><IoSchoolSharp /></span>
               <span className="txt-link">Equipes</span>
             </a>

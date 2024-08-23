@@ -1,0 +1,60 @@
+/* src/Carousel2.css */
+.container2 {
+  width: 100%; /* Faz o container ocupar toda a largura da página */
+  position: relative; /* Permite o posicionamento absoluto dos botões */
+  overflow: hidden; /* Oculta o conteúdo que ultrapassa o container */
+}
+
+.carousel2 {
+  position: relative; 
+  width: 100%;
+  height: 500px; /* Altura do carrossel */
+}
+
+.carousel-items2 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item2 {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.carousel-item2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  width: 50px; /* Ajuste o tamanho do botão */
+  height: 100%; /* Ajuste o tamanho do botão */
+  background-color: rgba(0, 0, 0, 0);
+  color: red;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+
+.prev2 {
+  left: 0.1px;
+}
+
+.next2 {
+  right: 0.1px;
+}
+
+@media (max-width: 450px) {
+  .carousel2 {
+      position: relative;
+      width: 100%;
+      height: 150px;
+  }
+}

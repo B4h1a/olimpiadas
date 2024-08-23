@@ -49,7 +49,7 @@ function Informacoes() {
                 <br></br>
                 <h1 style={{color:'red'}}>Equipe Multimídia</h1>
                 <br></br>
-                <div style={{display:'flex',flexDirection:'row', gap:'10px'}}className='fotos'>
+                <div className='fotos'>
                     <img src={gabriela}></img>
                     <img src={stevan}></img>
                     <img src={nicoli}></img>
@@ -62,7 +62,7 @@ function Informacoes() {
                 <br></br>
                 <h1 style={{color:'red'}}>Equipe Desenvolvimento de Sistemas</h1>
                 <br></br>
-                <div style={{display:'flex',flexDirection:'row', gap:'10px'}}className='fotos'>
+                <div className='fotos'>
                 <img src={victor}></img>
                 <img src={jao}></img>
                 <img src={vinicius}></img>

@@ -1,0 +1,188 @@
+/* salas.css */
+
+.font {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding: 20px;
+    background-color: red;
+    color: white;
+}
+
+.font-artilheiro {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    color: red;
+    font-style: normal;
+    font-size: 40px;
+}
+
+#subtitulo {
+    border-bottom: 1px red solid;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: red;
+    padding: 20px;
+}
+
+.times {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 300px;
+    row-gap: 100px;
+}
+
+.time img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+}
+
+.time p {
+    margin: -20px 0 0;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+.artilheiros-tabelas {
+    border-collapse: collapse; /* Remove espaços entre as células */
+    font-family: "Paytone One", sans-serif;
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+    border: none; /* Remove a borda ao redor da tabela */
+}
+
+.artilheiros-tabelas th,
+.artilheiros-tabelas td {
+    padding: 10px; /* Ajusta o espaçamento interno das células */
+    text-align: left; /* Alinha o texto à esquerda */
+    border: none; /* Remove as bordas das células */
+}
+
+.artilheiros-tabelas thead {
+    background-color: red; /* Define a cor de fundo do cabeçalho */
+    color: white; /* Define a cor do texto do cabeçalho */
+}
+
+.artilheiros-tabelas tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Define a cor de fundo das linhas ímpares para um efeito de listras */
+}
+
+.artilheiros-tabelas tbody tr:hover {
+    background-color: #e0e0e0; /* Destaca a linha quando o mouse está sobre ela */
+}
+
+.artilheiros-tabelas th {
+    font-weight: bold; /* Destaca o texto do cabeçalho */
+}
+
+.artilheiros-section {
+    display: flex;
+    align-items: flex-start; /* Alinha a seção ao topo */
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.artilheiros-tabela-container {
+    flex: 2;
+    margin-right: 20px; /* Espaçamento entre a tabela e os destaques */
+}
+
+.artilheiros-destaques {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artilheiros-images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+}
+
+.artilheiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artilheiro img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+}
+
+.artilheiro p {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 430px) {
+    .font, .font-artilheiro, #subtitulo {
+        font-size: 24px; /* Reduz o tamanho da fonte */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .times {
+        max-width: 100%;
+        column-gap: 20px; /* Reduz o espaçamento entre as colunas */
+        row-gap: 20px; /* Reduz o espaçamento entre as linhas */
+    }
+
+    .time img {
+        width: 150px; /* Reduz a largura da imagem */
+    }
+
+    .time p {
+        font-size: 18px; /* Reduz o tamanho da fonte */
+        margin: -10px 0 0;
+    }
+
+    .artilheiros-tabelas {
+        font-size: 16px; /* Reduz o tamanho da fonte da tabela */
+    }
+
+    .artilheiros-tabelas th,
+    .artilheiros-tabelas td {
+        padding: 8px; /* Reduz o padding das células */
+    }
+
+    .artilheiros-section {
+        flex-direction: column; /* Alinha a seção em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .artilheiros-tabela-container {
+        margin-right: 0; /* Remove o espaço entre a tabela e os destaques */
+        margin-bottom: 20px; /* Adiciona espaço abaixo da tabela */
+    }
+
+    .artilheiros-destaques {
+        width: 100%; /* Ajusta a largura dos destaques */
+        margin-top: 20px; /* Adiciona margem acima dos destaques */
+    }
+
+    .artilheiros-images {
+        flex-direction: column; /* Alinha as imagens em coluna */
+        gap: 10px; /* Adiciona espaçamento entre as imagens */
+    }
+
+    .artilheiro img {
+        width: 100px; /* Reduz a largura da imagem */
+        height: 150px; /* Reduz a altura da imagem */
+    }
+
+    .artilheiro p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+}

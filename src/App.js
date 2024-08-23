@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Bar from "./pages/Bar";
-import FaseGrupo from "./pages/FaseGrupo";
 import Futsal from "./pages/Futsal";
 import Volei from "./pages/volei";
 import Queimada from "./pages/queimada";
@@ -12,6 +11,7 @@ import Tenis from "./pages/tenis";
 import Atletismo from "./pages/atletismo";
 import Handebol from "./pages/handebol";
 import Informacoes from "./pages/informacoes";
+import Salas from './pages/salas';
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
           <Route path="/Handebol" element={<Handebol />} />
           <Route path="/Tênis/Mesa" element={<Tenis />} />
           <Route path="/Futmesa" element={<Futmesa />} />
+          <Route path="/Salas" element={<Salas />} />
         </Routes>
       </div>
     </Router>

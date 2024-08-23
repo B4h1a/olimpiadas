@@ -9,11 +9,14 @@
 }
 
 .texto {
-  font-family: cursive;
   color: red;
-  font-size: 45px;
+  font-size: 55px;
   margin-top: -90px;
+  text-align: center;
   margin-bottom: -24px;
+  font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cinza {
@@ -108,14 +111,16 @@
 }
 
 .data {
+  text-align: center;
   display: flex;
   flex-direction: column;
   margin: 50px auto;
   padding: 20px;
   max-width: 1200px;
-  background-color: #f9f9f9;
-  border: 2px solid red;
   box-sizing: border-box;
+  font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -138,6 +143,7 @@
 }
 
 #futsal2 {
+  text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: black;
@@ -262,6 +268,15 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     overflow-x: auto;
     /* Permite rolar horizontalmente se necessário */
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #h1-tabela{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .grupo5 {
@@ -321,8 +336,6 @@ body::-webkit-scrollbar-thumb {
     width: calc(100% - 50px);
     /* Ajusta a largura para considerar a sidebar */
     max-width: 100%;
-    background-color: #f9f9f9;
-    border: 2px solid red;
     box-sizing: border-box;
   }
 
@@ -556,8 +569,7 @@ body {
   padding: 10px;
   width: calc(100% - 40px);
   max-width: 100%;
-  background-color: #f9f9f9;
-  border: 2px solid red;
+  
   box-sizing: border-box;
 }
 
@@ -745,8 +757,6 @@ body::-webkit-scrollbar-thumb {
   margin: 30px auto; /* Ajuste a margem */
   padding: 15px; /* Ajuste o padding */
   max-width: 100%;
-  background-color: #f9f9f9;
-  border: 2px solid red;
   box-sizing: border-box;
 }
 
@@ -772,6 +782,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Estilo do elemento #futsal2 */
 #futsal2 {
+  text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: black;
