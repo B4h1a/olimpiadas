@@ -50,10 +50,22 @@ function Informacoes() {
                 <h1 style={{color:'red'}}>Equipe Multimídia</h1>
                 <br></br>
                 <div className='fotos'>
+                    <nav style={{textAlign:'center', fontSize:30}}>
                     <img src={gabriela}></img>
+                    <p>Gabriela</p>
+                    </nav>
+                    <nav style={{textAlign:'center', fontSize:30}}>
                     <img src={stevan}></img>
+                    <p>Stevan</p>
+                    </nav>
+                    <nav style={{textAlign:'center', fontSize:30}}>
                     <img src={nicoli}></img>
+                    <p>Nicoli</p>
+                    </nav>
+                    <nav style={{textAlign:'center', fontSize:30}}>
                     <img src={lais}></img>
+                    <p>Lais</p>
+                    </nav>
                 </div>
                 <br></br>
                 <br></br>
@@ -63,11 +75,24 @@ function Informacoes() {
                 <h1 style={{color:'red'}}>Equipe Desenvolvimento de Sistemas</h1>
                 <br></br>
                 <div className='fotos'>
+                <nav style={{textAlign:'center', fontSize:30}}>
                 <img src={victor}></img>
+                <p>Victor</p>
+                </nav>
+                <nav style={{textAlign:'center', fontSize:30}}>
                 <img src={jao}></img>
+                <p>João</p>
+                </nav>
+                <nav style={{textAlign:'center', fontSize:30}}>
                 <img src={vinicius}></img>
+                <p>Vinícius</p>
+                </nav>
+                <nav style={{textAlign:'center', fontSize:30}}>
                 <img src={pedro}></img>
+                <p>Pedro</p>
+                </nav>
                 </div>
+
                 <br></br>
                 <br></br>
                 <h2>É no presente que o SESI constrói o futuro da educação e do trabalho</h2>
