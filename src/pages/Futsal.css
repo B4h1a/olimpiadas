@@ -119,6 +119,24 @@
       width: 350px;
     }
   }
+  @media (max-width: 490px) {
+    .App-Esporte{
+      margin-left: 50px;
+    }
+    #reparticao img{
+      background-color: #CF1919;
+      width: 350px;
+    }
+  }
+  @media (max-width: 500px) {
+    .App-Esporte{
+      margin-left: 50px;
+    }
+    #reparticao img{
+      background-color: #CF1919;
+      width: 350px;
+    }
+  }
   @media (max-width: 550px) {
     .App-Esporte{
       margin-left: 50px;
