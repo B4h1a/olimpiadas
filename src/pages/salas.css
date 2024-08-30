@@ -31,78 +31,79 @@
 .times {
     display: inline-flex;
     flex-wrap: wrap;
-    max-width: 1300px;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
-    column-gap: 300px;
-    row-gap: 100px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .time img {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 150px; /* Ajuste o tamanho conforme necessário */
 }
 
 .time p {
-    margin: -20px 0 0;
+    margin: -10px 0 0;
     font-family: Arial, sans-serif;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .artilheiros-tabelas {
-    border-collapse: collapse; /* Remove espaços entre as células */
+    border-collapse: collapse;
     font-family: "Paytone One", sans-serif;
-    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
-    border: none; /* Remove a borda ao redor da tabela */
+    font-size: 16px;
+    border: none;
 }
 
 .artilheiros-tabelas th,
 .artilheiros-tabelas td {
-    padding: 10px; /* Ajusta o espaçamento interno das células */
-    text-align: left; /* Alinha o texto à esquerda */
-    border: none; /* Remove as bordas das células */
+    padding: 8px;
+    text-align: left;
+    border: none;
 }
 
 .artilheiros-tabelas thead {
-    background-color: red; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto do cabeçalho */
+    background-color: red;
+    color: white;
 }
 
 .artilheiros-tabelas tbody tr:nth-child(odd) {
-    background-color: #f9f9f9; /* Define a cor de fundo das linhas ímpares para um efeito de listras */
+    background-color: #f9f9f9;
 }
 
 .artilheiros-tabelas tbody tr:hover {
-    background-color: #e0e0e0; /* Destaca a linha quando o mouse está sobre ela */
+    background-color: #e0e0e0;
 }
 
 .artilheiros-tabelas th {
-    font-weight: bold; /* Destaca o texto do cabeçalho */
+    font-weight: bold;
 }
 
 .artilheiros-section {
     display: flex;
-    align-items: flex-start; /* Alinha a seção ao topo */
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 0;
 }
 
 .artilheiros-tabela-container {
-    flex: 2;
-    margin-right: 20px; /* Espaçamento entre a tabela e os destaques */
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .artilheiros-destaques {
-    flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .artilheiros-images {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
-    justify-content: center; /* Centraliza as imagens horizontalmente */
+    justify-content: center;
 }
 
 .artilheiro {
@@ -112,257 +113,83 @@
 }
 
 .artilheiro img {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
-    height: 200px; /* Ajuste o tamanho conforme necessário */
-    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .artilheiro p {
     margin-top: 10px;
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
-
-
-
-@media (max-width: 430px) {
+@media (max-width: 500px) {
     .font, .font-artilheiro, #subtitulo {
-        font-size: 24px; /* Reduz o tamanho da fonte */
-        padding: 10px; /* Reduz o padding */
+        font-size: 24px;
+        padding: 10px;
     }
 
     .times {
-        max-width: 100%;
-        column-gap: 20px; /* Reduz o espaçamento entre as colunas */
-        row-gap: 20px; /* Reduz o espaçamento entre as linhas */
+        column-gap: 10px;
+        row-gap: 10px;
     }
 
     .time img {
-        width: 150px; /* Reduz a largura da imagem */
+        width: 120px;
     }
 
     .time p {
-        font-size: 18px; /* Reduz o tamanho da fonte */
-        margin: -10px 0 0;
+        font-size: 16px;
     }
 
     .artilheiros-tabelas {
-        font-size: 16px; /* Reduz o tamanho da fonte da tabela */
+        font-size: 14px;
     }
 
     .artilheiros-tabelas th,
     .artilheiros-tabelas td {
-        padding: 8px; /* Reduz o padding das células */
+        padding: 6px;
     }
 
-    .artilheiros-section {
-        flex-direction: column; /* Alinha a seção em coluna */
-        align-items: center; /* Centraliza os itens horizontalmente */
-    }
-
-    .artilheiros-tabela-container {
-        margin-right: 0; /* Remove o espaço entre a tabela e os destaques */
-        margin-bottom: 20px; /* Adiciona espaço abaixo da tabela */
-    }
-
-    .artilheiros-destaques {
-        width: 100%; /* Ajusta a largura dos destaques */
-        margin-top: 20px; /* Adiciona margem acima dos destaques */
-    }
-
-    .artilheiros-images {
-        flex-direction: column; /* Alinha as imagens em coluna */
-        gap: 10px; /* Adiciona espaçamento entre as imagens */
-    }
-
+    .artilheiros-images,
     .artilheiro img {
-        width: 100px; /* Reduz a largura da imagem */
-        height: 150px; /* Reduz a altura da imagem */
-    }
-
-    .artilheiro p {
-        font-size: 16px; /* Reduz o tamanho da fonte */
-    }
-}
-
-@media (max-width: 450px) {
-    .font, .font-artilheiro, #subtitulo {
-        font-size: 24px; /* Reduz o tamanho da fonte */
-        padding: 10px; /* Reduz o padding */
-    }
-
-    .times {
-        max-width: 100%;
-        column-gap: 20px; /* Reduz o espaçamento entre as colunas */
-        row-gap: 20px; /* Reduz o espaçamento entre as linhas */
-    }
-
-    .time img {
-        width: 150px; /* Reduz a largura da imagem */
-    }
-
-    .time p {
-        font-size: 18px; /* Reduz o tamanho da fonte */
-        margin: -10px 0 0;
-    }
-
-    .artilheiros-tabelas {
-        font-size: 16px; /* Reduz o tamanho da fonte da tabela */
-    }
-
-    .artilheiros-tabelas th,
-    .artilheiros-tabelas td {
-        padding: 8px; /* Reduz o padding das células */
-    }
-
-    .artilheiros-section {
-        flex-direction: column; /* Alinha a seção em coluna */
-        align-items: center; /* Centraliza os itens horizontalmente */
-    }
-
-    .artilheiros-tabela-container {
-        margin-right: 0; /* Remove o espaço entre a tabela e os destaques */
-        margin-bottom: 20px; /* Adiciona espaço abaixo da tabela */
-    }
-
-    .artilheiros-destaques {
-        width: 100%; /* Ajusta a largura dos destaques */
-        margin-top: 20px; /* Adiciona margem acima dos destaques */
-    }
-
-    .artilheiros-images {
-        flex-direction: column; /* Alinha as imagens em coluna */
-        gap: 10px; /* Adiciona espaçamento entre as imagens */
-    }
-
-    .artilheiro img {
-        width: 100px; /* Reduz a largura da imagem */
-        height: 150px; /* Reduz a altura da imagem */
-    }
-
-    .artilheiro p {
-        font-size: 16px; /* Reduz o tamanho da fonte */
+        width: 80px;
+        height: 120px;
     }
 }
 
 @media (max-width: 490px) {
     .font, .font-artilheiro, #subtitulo {
-        font-size: 24px; /* Reduz o tamanho da fonte */
-        padding: 10px; /* Reduz o padding */
-    }
-
-    .times {
-        max-width: 100%;
-        column-gap: 20px; /* Reduz o espaçamento entre as colunas */
-        row-gap: 20px; /* Reduz o espaçamento entre as linhas */
+        font-size: 22px;
     }
 
     .time img {
-        width: 150px; /* Reduz a largura da imagem */
+        width: 110px;
     }
 
     .time p {
-        font-size: 18px; /* Reduz o tamanho da fonte */
-        margin: -10px 0 0;
-    }
-
-    .artilheiros-tabelas {
-        font-size: 16px; /* Reduz o tamanho da fonte da tabela */
-    }
-
-    .artilheiros-tabelas th,
-    .artilheiros-tabelas td {
-        padding: 8px; /* Reduz o padding das células */
-    }
-
-    .artilheiros-section {
-        flex-direction: column; /* Alinha a seção em coluna */
-        align-items: center; /* Centraliza os itens horizontalmente */
-    }
-
-    .artilheiros-tabela-container {
-        margin-right: 0; /* Remove o espaço entre a tabela e os destaques */
-        margin-bottom: 20px; /* Adiciona espaço abaixo da tabela */
-    }
-
-    .artilheiros-destaques {
-        width: 100%; /* Ajusta a largura dos destaques */
-        margin-top: 20px; /* Adiciona margem acima dos destaques */
-    }
-
-    .artilheiros-images {
-        flex-direction: column; /* Alinha as imagens em coluna */
-        gap: 10px; /* Adiciona espaçamento entre as imagens */
-    }
-
-    .artilheiro img {
-        width: 100px; /* Reduz a largura da imagem */
-        height: 150px; /* Reduz a altura da imagem */
-    }
-
-    .artilheiro p {
-        font-size: 16px; /* Reduz o tamanho da fonte */
+        font-size: 15px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .font, .font-artilheiro, #subtitulo {
-        font-size: 24px; /* Reduz o tamanho da fonte */
-        padding: 10px; /* Reduz o padding */
-    }
-
-    .times {
-        max-width: 100%;
-        column-gap: 20px; /* Reduz o espaçamento entre as colunas */
-        row-gap: 20px; /* Reduz o espaçamento entre as linhas */
+        font-size: 20px;
     }
 
     .time img {
-        width: 150px; /* Reduz a largura da imagem */
+        width: 100px;
+    }
+}
+
+@media (max-width: 430px) {
+    .font, .font-artilheiro, #subtitulo {
+        font-size: 18px;
     }
 
-    .time p {
-        font-size: 18px; /* Reduz o tamanho da fonte */
-        margin: -10px 0 0;
-    }
-
-    .artilheiros-tabelas {
-        font-size: 16px; /* Reduz o tamanho da fonte da tabela */
-    }
-
-    .artilheiros-tabelas th,
-    .artilheiros-tabelas td {
-        padding: 8px; /* Reduz o padding das células */
-    }
-
-    .artilheiros-section {
-        flex-direction: column; /* Alinha a seção em coluna */
-        align-items: center; /* Centraliza os itens horizontalmente */
-    }
-
-    .artilheiros-tabela-container {
-        margin-right: 0; /* Remove o espaço entre a tabela e os destaques */
-        margin-bottom: 20px; /* Adiciona espaço abaixo da tabela */
-    }
-
-    .artilheiros-destaques {
-        width: 100%; /* Ajusta a largura dos destaques */
-        margin-top: 20px; /* Adiciona margem acima dos destaques */
-    }
-
-    .artilheiros-images {
-        flex-direction: column; /* Alinha as imagens em coluna */
-        gap: 10px; /* Adiciona espaçamento entre as imagens */
-    }
-
-    .artilheiro img {
-        width: 100px; /* Reduz a largura da imagem */
-        height: 150px; /* Reduz a altura da imagem */
-    }
-
-    .artilheiro p {
-        font-size: 16px; /* Reduz o tamanho da fonte */
+    .time img {
+        width: 90px;
     }
 }
