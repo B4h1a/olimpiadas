@@ -52,19 +52,19 @@ function Informacoes() {
                 <div className='fotos'>
                     <nav style={{textAlign:'center', fontSize:30}}>
                     <img src={gabriela}></img>
-                    <p>Gabriela</p>
+                    <p>Gabriella Chioda</p>
                     </nav>
                     <nav style={{textAlign:'center', fontSize:30}}>
                     <img src={stevan}></img>
-                    <p>Stevan</p>
+                    <p>Stevan Maxwell</p>
                     </nav>
                     <nav style={{textAlign:'center', fontSize:30}}>
                     <img src={nicoli}></img>
-                    <p>Nicoli</p>
+                    <p>Nicoli Savan</p>
                     </nav>
                     <nav style={{textAlign:'center', fontSize:30}}>
                     <img src={lais}></img>
-                    <p>Lais</p>
+                    <p>Laís Stefani</p>
                     </nav>
                 </div>
                 <br></br>
@@ -77,19 +77,19 @@ function Informacoes() {
                 <div className='fotos'>
                 <nav style={{textAlign:'center', fontSize:30}}>
                 <img src={victor}></img>
-                <p>Victor</p>
+                <p>Victor Bahia</p>
                 </nav>
                 <nav style={{textAlign:'center', fontSize:30}}>
                 <img src={jao}></img>
-                <p>João</p>
+                <p>João Aylton</p>
                 </nav>
                 <nav style={{textAlign:'center', fontSize:30}}>
                 <img src={vinicius}></img>
-                <p>Vinícius</p>
+                <p>Vinícius Thomaz</p>
                 </nav>
                 <nav style={{textAlign:'center', fontSize:30}}>
                 <img src={pedro}></img>
-                <p>Pedro</p>
+                <p>Pedro Levati</p>
                 </nav>
                 </div>
 
