@@ -1,164 +1,149 @@
 .App-Esporte {
-    text-align: center;
-    padding: 0;
-    margin:0;
-  }
-  
-  table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    font-family: "Paytone One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  table, th, td {
-    border: 1px solid black;
-  }
-  
-  th {
-    padding: 10px;
-    text-align: center;
-  }
-  h2 {
-    margin-top: 40px;
-  }
-  .banner{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    overflow: hidden;
+  text-align: center;
+  padding: 0;
+  margin:0;
+}
 
-  }
-  .torneio{
-    font-family: "Paytone One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: red;
-  }
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .genero{
-    font-family: "Paytone One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+}
+h2 {
+  margin-top: 40px;
+}
+.banner{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+
+}
+.torneio{
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: red;
+}
+
+.genero{
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font2{
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#reparticao{
+  background-color: #CF1919;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+.group-stage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Adiciona quebra de linha para tabelas em telas pequenas */
+}
+
+.group {
+  padding: 20px;
+  border-radius: 8px;
+  width: 433px; /* Define uma largura fixa para as tabelas */
+}
+
+table.grupo1 {
+  width: 100%;
+  border-collapse: collapse; /* Remove espaços entre as células */
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: none; /* Remove todas as bordas das células */
+}
+
+th {
+  background-color: red; /* Cor de fundo do cabeçalho */
+  color: white; /* Cor do texto do cabeçalho */
+  font-weight: bold; /* Destaca o texto do cabeçalho */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Cor de fundo das linhas ímpares */
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0; /* Destaca a linha quando o mouse passa sobre ela */
+}
+
+td {
+  font-size: 1rem; /* Tamanho da fonte das células */
+  color: #555; /* Cor do texto das células */
+}
+
+td.td1 {
+  font-weight: bold; /* Destaca o texto nas células com a classe 'td1' */
+}
+
+
+
+@media (max-width: 450px) {
+  .App-Esporte{
+    margin-left: 50px;
   }
-  .font2{
-    font-family: "Paytone One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  #reparticao{
+  #reparticao img{
     background-color: #CF1919;
-    width: 100%;
+    width: 350px;
   }
-  
-
-
-
-
-
-
-  
-  .group-stage {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap; /* Adiciona quebra de linha para tabelas em telas pequenas */
+}
+@media (max-width: 490px) {
+  .App-Esporte{
+    margin-left: 50px;
   }
-  
-  .group {
-    padding: 20px;
-    border-radius: 8px;
-    width: 433px; /* Define uma largura fixa para as tabelas */
+  #reparticao img{
+    background-color: #CF1919;
+    width: 350px;
   }
-  
-  table.grupo1 {
-    width: 100%;
-    border-collapse: collapse; /* Remove espaços entre as células */
+}
+@media (max-width: 500px) {
+  .App-Esporte{
+    margin-left: 50px;
   }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-    border: none; /* Remove todas as bordas das células */
+  #reparticao img{
+    background-color: #CF1919;
+    width: 350px;
   }
-  
-  th {
-    background-color: red; /* Cor de fundo do cabeçalho */
-    color: white; /* Cor do texto do cabeçalho */
-    font-weight: bold; /* Destaca o texto do cabeçalho */
+}
+@media (max-width: 550px) {
+  .App-Esporte{
+    margin-left: 50px;
   }
-  
-  tbody tr:nth-child(odd) {
-    background-color: #f9f9f9; /* Cor de fundo das linhas ímpares */
+  #reparticao img{
+    background-color: #CF1919;
+    width: 350px;
   }
-  
-  tbody tr:hover {
-    background-color: #e0e0e0; /* Destaca a linha quando o mouse passa sobre ela */
-  }
-  
-  td {
-    font-size: 1rem; /* Tamanho da fonte das células */
-    color: #555; /* Cor do texto das células */
-  }
-  
-  td.td1 {
-    font-weight: bold; /* Destaca o texto nas células com a classe 'td1' */
-  }
-  
-  
-
-  @media (max-width: 450px) {
-    .App-Esporte{
-      margin-left: 50px;
-    }
-    #reparticao img{
-      background-color: #CF1919;
-      width: 350px;
-    }
-  }
-  @media (max-width: 450px) {
-    .App-Esporte {
-      padding: 10px;
-    }
-    
-    #reparticao img {
-      width: 100%; /* Ajusta a imagem para ocupar a largura total */
-    }
-  }
-  @media (max-width: 490px) {
-    .App-Esporte{
-      margin-left: 50px;
-    }
-    #reparticao img{
-      background-color: #CF1919;
-      width: 350px;
-    }
-  }
-  @media (max-width: 500px) {
-    .App-Esporte{
-      margin-left: 50px;
-    }
-    #reparticao img{
-      background-color: #CF1919;
-      width: 350px;
-    }
-  }
-  @media (max-width: 550px) {
-    .App-Esporte{
-      margin-left: 50px;
-    }
-    #reparticao img{
-      background-color: #CF1919;
-      width: 350px;
-    }
-  }
-  @media (max-width: 768px) {
-    .group-stage {
-      flex-direction: column; /* Empilha as tabelas verticalmente em telas menores */
-    }
-  }
-  
+}
