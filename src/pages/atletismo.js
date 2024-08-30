@@ -2,9 +2,8 @@ import React from 'react';
 import './Futsal.css';
 import Logo from '../assets/logo2.png';
 import Banner from '../assets/fundoatletismo.jpg';
-import Reparticao from '../assets/reparticao.png'
+import Reparticao from '../assets/reparticao.png';
 import Footer from './Footer';
-
 
 function Atletismo() {
     return (
@@ -12,14 +11,17 @@ function Atletismo() {
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet" />
+
             <div id='menu'>
-                <img className='banner' src={Banner}></img>
+                <img className='banner' src={Banner} alt="Banner de Atletismo" />
             </div>
+
             <h1 className='torneio'>TORNEIO DE ATLETISMO</h1>
             <h3 className='genero'>MASCULINO</h3>
+
             {/* Fase de Grupos */}
-            <div class="artilheiros-tabelas">
-                <table>
+            <div className="artilheiros-tabela-container">
+                <table className="artilheiros-tabelas">
                     <thead>
                         <tr>
                             <th>Posição</th>
@@ -68,16 +70,15 @@ function Atletismo() {
                     </tbody>
                 </table>
             </div>
-            <div id='reparticao'>
-                <img src={Reparticao} />
-            </div>
-            <div id='menu'>
-                <br></br>
-                <br></br>
-                <h3 className='genero'>FEMININO</h3>
 
-                <div class="artilheiros-tabela">
-                    <table>
+            <div id='reparticao'>
+                <img src={Reparticao} alt="Repartição" />
+            </div>
+
+            <div id='menu'>
+                <h3 className='genero'>FEMININO</h3>
+                <div className="artilheiros-tabela-container">
+                    <table className="artilheiros-tabelas">
                         <thead>
                             <tr>
                                 <th>Posição</th>
@@ -126,8 +127,9 @@ function Atletismo() {
                         </tbody>
                     </table>
                 </div>
-                <Footer />
             </div>
+
+            <Footer />
         </div>
     );
 }

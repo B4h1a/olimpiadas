@@ -1,4 +1,4 @@
-/* salas.css */
+/* Futsal.css */
 
 .font {
     font-family: "Paytone One", sans-serif;
@@ -48,17 +48,20 @@
     font-size: 18px;
 }
 
+/* Adiciona o scroll horizontal para tabelas */
 .artilheiros-tabela-container {
     overflow-x: auto; /* Adiciona scroll horizontal na tabela */
     -webkit-overflow-scrolling: touch; /* Suaviza o scrolling em dispositivos móveis */
+    margin: 20px 0; /* Espaçamento ao redor do contêiner da tabela */
+    width: 100%; /* Garante que o contêiner ocupe 100% da largura */
 }
 
+/* Estilização das tabelas */
 .artilheiros-tabelas {
     border-collapse: collapse;
     font-family: "Paytone One", sans-serif;
     font-size: 16px;
-    border: none;
-    width: 100%;
+    width: 100%; /* Tabela ocupa 100% da largura do contêiner */
 }
 
 .artilheiros-tabelas th,
@@ -126,6 +129,7 @@
     text-align: center;
 }
 
+/* Media queries para responsividade */
 @media (max-width: 500px) {
     .font, .font-artilheiro, #subtitulo {
         font-size: 24px;
