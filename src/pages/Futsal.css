@@ -53,26 +53,7 @@
     background-color: #CF1919;
     width: 100%;
   }
-  .banner {
-    width: 100%;
-    height: auto; /* Ajusta a altura automaticamente */
-    object-fit: cover;
-    display: block;
-    overflow: hidden;
-  }
   
-  /* Estilo para o elemento #reparticao */
-  #reparticao {
-    background-color: #CF1919;
-    width: 100%;
-  }
-  
-  #reparticao img {
-    width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-    display: block;
-    object-fit: cover;
-  }
 
 
 
