@@ -48,11 +48,17 @@
     font-size: 18px;
 }
 
+.artilheiros-tabela-container {
+    overflow-x: auto; /* Adiciona scroll horizontal na tabela */
+    -webkit-overflow-scrolling: touch; /* Suaviza o scrolling em dispositivos móveis */
+}
+
 .artilheiros-tabelas {
     border-collapse: collapse;
     font-family: "Paytone One", sans-serif;
     font-size: 16px;
     border: none;
+    width: 100%;
 }
 
 .artilheiros-tabelas th,
@@ -84,11 +90,6 @@
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
-}
-
-.artilheiros-tabela-container {
-    margin-bottom: 20px;
-    width: 100%;
 }
 
 .artilheiros-destaques {
