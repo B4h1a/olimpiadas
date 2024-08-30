@@ -47,6 +47,8 @@
 }
 
 .artilheiros-tabelas {
+    overflow-x: auto; /* Adiciona scroll horizontal na tabela */
+    -webkit-overflow-scrolling: touch; /* Suaviza o scrolling em dispositivos móveis */
     border-collapse: collapse; /* Remove espaços entre as células */
     font-family: "Paytone One", sans-serif;
     font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
@@ -267,6 +269,7 @@
     }
 
     .artilheiros-tabelas {
+        
         font-size: 16px; /* Reduz o tamanho da fonte da tabela */
     }
 
