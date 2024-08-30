@@ -119,10 +119,18 @@ td.td1 {
     background-color: #CF1919;
     width: 350px;
   }
+  .reparticao{
+    background-color: #CF1919;
+    width: 100%;
+  }
 }
 @media (max-width: 490px) {
   .App-Esporte{
     margin-left: 50px;
+  }
+  .reparticao{
+    background-color: #CF1919;
+    width: 100%;
   }
   #reparticao img{
     background-color: #CF1919;
@@ -133,6 +141,10 @@ td.td1 {
   .App-Esporte{
     margin-left: 50px;
   }
+  .reparticao{
+    background-color: #CF1919;
+    width: 100%;
+  }
   #reparticao img{
     background-color: #CF1919;
     width: 350px;
@@ -141,6 +153,10 @@ td.td1 {
 @media (max-width: 550px) {
   .App-Esporte{
     margin-left: 50px;
+  }
+  .reparticao{
+    background-color: #CF1919;
+    width: 100%;
   }
   #reparticao img{
     background-color: #CF1919;
