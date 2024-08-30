@@ -33,7 +33,7 @@ const Salas = () => (
             </div>
             <div className="time">
                 <img src={Italia} alt="Itália" />
-                <p>1ºB</p>
+                <p>1ºA</p>
             </div>
             <div className="time">
                 <img src={Canada} alt="Canadá" />
@@ -77,31 +77,31 @@ const Salas = () => (
                         <tr>
                             <td>1</td>
                             <td>João</td>
-                            <td>100m</td>
+                            <td>3ºA</td>
                             <td>5</td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Maria</td>
-                            <td>200m</td>
+                            <td>3ºB</td>
                             <td>4</td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>Pedro</td>
-                            <td>400m</td>
+                            <td>3ºA</td>
                             <td>3</td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>Matheus</td>
-                            <td>500m</td>
+                            <td>3ºB</td>
                             <td>2</td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>Caue</td>
-                            <td>600m</td>
+                            <td>3ºA</td>
                             <td>1</td>
                         </tr>
                     </tbody>
