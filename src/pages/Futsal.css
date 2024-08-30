@@ -117,11 +117,13 @@ td.td1 {
   }
   #reparticao img{
     background-color: #CF1919;
-    width: 350px;
+    width: 100%;
+    height: auto;
   }
   .reparticao{
     background-color: #CF1919;
     width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 490px) {
@@ -131,10 +133,12 @@ td.td1 {
   .reparticao{
     background-color: #CF1919;
     width: 100%;
+    height: auto;
   }
   #reparticao img{
     background-color: #CF1919;
-    width: 350px;
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 500px) {
@@ -144,10 +148,12 @@ td.td1 {
   .reparticao{
     background-color: #CF1919;
     width: 100%;
+    height: auto;
   }
   #reparticao img{
     background-color: #CF1919;
-    width: 350px;
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 550px) {
@@ -157,9 +163,11 @@ td.td1 {
   .reparticao{
     background-color: #CF1919;
     width: 100%;
+    height: auto;
   }
   #reparticao img{
     background-color: #CF1919;
-    width: 350px;
+    width: 100%;
+    height: auto;
   }
 }
