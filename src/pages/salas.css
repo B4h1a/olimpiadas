@@ -54,6 +54,10 @@
     font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
     border: none; /* Remove a borda ao redor da tabela */
 }
+.artilheiros-tabela{
+    overflow-x: auto; /* Adiciona scroll horizontal na tabela */
+    -webkit-overflow-scrolling: touch; /* Suaviza o scrolling em dispositivos móveis */
+}
 
 .artilheiros-tabelas th,
 .artilheiros-tabelas td {
