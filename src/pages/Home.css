@@ -812,3 +812,199 @@ body::-webkit-scrollbar-thumb {
 }
 
 }
+
+@media (max-width:500px) {
+  /* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-home{
+  margin-left: 50px;
+}
+
+/* Container principal */
+.container {
+  width: 100% ; /* Ajusta a largura para um pouco menos que a largura total */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Texto principal */
+.texto {
+  font-family: cursive;
+  color: red;
+  font-size: 29px; /* Ajustado para telas um pouco maiores */
+  margin-top: -60px; /* Ajuste de margem superior */
+  margin-bottom: -16px; /* Ajuste de margem inferior */
+}
+
+/* Estilo do elemento .cinza */
+.cinza {
+  margin-top: 60px; /* Ajuste a margem superior para mais espaço */
+}
+
+/* Texto secundário */
+.texto2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: #e7e7e7;
+  padding: 15px; /* Ajuste do padding para melhor ajuste */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo das seções de salas */
+.salas {
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+}
+
+/* Estilo dos itens dentro da sala */
+.salas2 {
+  flex-direction: column;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Ajuste a justificação para melhor centralização */
+  align-items: center;
+  color: white;
+  font-size: 50px; /* Reduzido o tamanho da fonte para melhor ajuste */
+  width: 200px; /* Ajuste a largura */
+  height: 240px; /* Ajuste a altura */
+  border: 1px solid black;
+}
+
+/* Estilo do elemento #salas3 */
+#salas3 {
+  font-family: sans-serif;
+  margin-top: -100px; /* Ajuste da margem superior */
+  font-size: 45px; /* Ajuste o tamanho da fonte */
+  font-weight: 100;
+}
+  /* Estilo da tabela home */
+  .tabela-home {
+    overflow-x: auto; /* Adiciona rolagem horizontal */
+    margin: auto;
+    max-width: 100%;
+  }
+
+  /* Estilo da tabela grupo5 */
+  /* Estilo da tabela home */
+  .tabela-home {
+    overflow-x: auto; /* Adiciona rolagem horizontal */
+    margin: auto;
+    max-width: 100%;
+  }
+
+  /* Estilo da tabela grupo5 */
+  .grupo5 {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .grupo5 thead th {
+    background-color: red;
+    color: white;
+    padding: 6px; /* Ajuste o padding */
+    text-align: center;
+    border: 1px solid #ffff;
+    font-size: 12px; /* Ajuste o tamanho da fonte */
+  }
+
+  .bordinha {
+    border-top-left-radius: 8px; /* Ajuste o raio das bordas */
+    border: none;
+  }
+
+  .bordinha2 {
+    border-top-right-radius: 8px; /* Ajuste o raio das bordas */
+  }
+
+  .grupo5 td {
+    padding: 6px; /* Ajuste o padding */
+    border: 1px solid #ffff;
+    text-align: center;
+    font-size: 10px; /* Ajuste o tamanho da fonte */
+  }
+
+  .grupo5 tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .grupo5 tbody tr:hover {
+    background-color: #ffff;
+  }
+
+  .td5 {
+    color: #333;
+  }
+
+/* Estilo do contêiner de dados */
+.data {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto; /* Ajuste a margem */
+  padding: 15px; /* Ajuste o padding */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo do elemento #futsal */
+#futsal {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: red;
+  height: 30px; /* Ajuste a altura */
+  width: 230px; /* Ajuste a largura */
+  margin: auto;
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+  font-weight: bold;
+}
+
+/* Imagens dentro do #futsal */
+#futsal img {
+  margin-top: -8px; /* Ajuste a margem superior */
+  width: 45px; /* Ajuste a largura */
+  height: 45px; /* Ajuste a altura */
+}
+
+/* Estilo do elemento #futsal2 */
+#futsal2 {
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 180px; /* Ajuste a largura */
+  height: 60px; /* Ajuste a altura */
+  margin: auto;
+}
+
+/* Imagens dentro do contêiner de dados */
+.data img {
+  width: 25px; /* Ajuste a largura das imagens */
+}
+
+/* Customização da scrollbar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  border: 1px black solid;
+}
+
+}
