@@ -53,7 +53,26 @@
     background-color: #CF1919;
     width: 100%;
   }
+  .banner {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente */
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+  }
   
+  /* Estilo para o elemento #reparticao */
+  #reparticao {
+    background-color: #CF1919;
+    width: 100%;
+  }
+  
+  #reparticao img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    object-fit: cover;
+  }
 
 
 
@@ -120,6 +139,15 @@
       width: 350px;
     }
   }
+  @media (max-width: 450px) {
+    .App-Esporte {
+      padding: 10px;
+    }
+    
+    #reparticao img {
+      width: 100%; /* Ajusta a imagem para ocupar a largura total */
+    }
+  }
   @media (max-width: 490px) {
     .App-Esporte{
       margin-left: 50px;
@@ -147,3 +175,9 @@
       width: 350px;
     }
   }
+  @media (max-width: 768px) {
+    .group-stage {
+      flex-direction: column; /* Empilha as tabelas verticalmente em telas menores */
+    }
+  }
+  
