@@ -186,3 +186,183 @@
         font-size: 16px; /* Reduz o tamanho da fonte */
     }
 }
+
+@media (max-width: 450px) {
+    .font, .font-artilheiro, #subtitulo {
+        font-size: 24px; /* Reduz o tamanho da fonte */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .times {
+        max-width: 100%;
+        column-gap: 20px; /* Reduz o espaçamento entre as colunas */
+        row-gap: 20px; /* Reduz o espaçamento entre as linhas */
+    }
+
+    .time img {
+        width: 150px; /* Reduz a largura da imagem */
+    }
+
+    .time p {
+        font-size: 18px; /* Reduz o tamanho da fonte */
+        margin: -10px 0 0;
+    }
+
+    .artilheiros-tabelas {
+        font-size: 16px; /* Reduz o tamanho da fonte da tabela */
+    }
+
+    .artilheiros-tabelas th,
+    .artilheiros-tabelas td {
+        padding: 8px; /* Reduz o padding das células */
+    }
+
+    .artilheiros-section {
+        flex-direction: column; /* Alinha a seção em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .artilheiros-tabela-container {
+        margin-right: 0; /* Remove o espaço entre a tabela e os destaques */
+        margin-bottom: 20px; /* Adiciona espaço abaixo da tabela */
+    }
+
+    .artilheiros-destaques {
+        width: 100%; /* Ajusta a largura dos destaques */
+        margin-top: 20px; /* Adiciona margem acima dos destaques */
+    }
+
+    .artilheiros-images {
+        flex-direction: column; /* Alinha as imagens em coluna */
+        gap: 10px; /* Adiciona espaçamento entre as imagens */
+    }
+
+    .artilheiro img {
+        width: 100px; /* Reduz a largura da imagem */
+        height: 150px; /* Reduz a altura da imagem */
+    }
+
+    .artilheiro p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (max-width: 490px) {
+    .font, .font-artilheiro, #subtitulo {
+        font-size: 24px; /* Reduz o tamanho da fonte */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .times {
+        max-width: 100%;
+        column-gap: 20px; /* Reduz o espaçamento entre as colunas */
+        row-gap: 20px; /* Reduz o espaçamento entre as linhas */
+    }
+
+    .time img {
+        width: 150px; /* Reduz a largura da imagem */
+    }
+
+    .time p {
+        font-size: 18px; /* Reduz o tamanho da fonte */
+        margin: -10px 0 0;
+    }
+
+    .artilheiros-tabelas {
+        font-size: 16px; /* Reduz o tamanho da fonte da tabela */
+    }
+
+    .artilheiros-tabelas th,
+    .artilheiros-tabelas td {
+        padding: 8px; /* Reduz o padding das células */
+    }
+
+    .artilheiros-section {
+        flex-direction: column; /* Alinha a seção em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .artilheiros-tabela-container {
+        margin-right: 0; /* Remove o espaço entre a tabela e os destaques */
+        margin-bottom: 20px; /* Adiciona espaço abaixo da tabela */
+    }
+
+    .artilheiros-destaques {
+        width: 100%; /* Ajusta a largura dos destaques */
+        margin-top: 20px; /* Adiciona margem acima dos destaques */
+    }
+
+    .artilheiros-images {
+        flex-direction: column; /* Alinha as imagens em coluna */
+        gap: 10px; /* Adiciona espaçamento entre as imagens */
+    }
+
+    .artilheiro img {
+        width: 100px; /* Reduz a largura da imagem */
+        height: 150px; /* Reduz a altura da imagem */
+    }
+
+    .artilheiro p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (max-width: 500px) {
+    .font, .font-artilheiro, #subtitulo {
+        font-size: 24px; /* Reduz o tamanho da fonte */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .times {
+        max-width: 100%;
+        column-gap: 20px; /* Reduz o espaçamento entre as colunas */
+        row-gap: 20px; /* Reduz o espaçamento entre as linhas */
+    }
+
+    .time img {
+        width: 150px; /* Reduz a largura da imagem */
+    }
+
+    .time p {
+        font-size: 18px; /* Reduz o tamanho da fonte */
+        margin: -10px 0 0;
+    }
+
+    .artilheiros-tabelas {
+        font-size: 16px; /* Reduz o tamanho da fonte da tabela */
+    }
+
+    .artilheiros-tabelas th,
+    .artilheiros-tabelas td {
+        padding: 8px; /* Reduz o padding das células */
+    }
+
+    .artilheiros-section {
+        flex-direction: column; /* Alinha a seção em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .artilheiros-tabela-container {
+        margin-right: 0; /* Remove o espaço entre a tabela e os destaques */
+        margin-bottom: 20px; /* Adiciona espaço abaixo da tabela */
+    }
+
+    .artilheiros-destaques {
+        width: 100%; /* Ajusta a largura dos destaques */
+        margin-top: 20px; /* Adiciona margem acima dos destaques */
+    }
+
+    .artilheiros-images {
+        flex-direction: column; /* Alinha as imagens em coluna */
+        gap: 10px; /* Adiciona espaçamento entre as imagens */
+    }
+
+    .artilheiro img {
+        width: 100px; /* Reduz a largura da imagem */
+        height: 150px; /* Reduz a altura da imagem */
+    }
+
+    .artilheiro p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+}
