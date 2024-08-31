@@ -965,7 +965,7 @@ body::-webkit-scrollbar-thumb {
   height: 30px; /* Ajuste a altura */
   width: 230px; /* Ajuste a largura */
   margin: auto;
-  font-size: 24px; /* Ajuste o tamanho da fonte */
+  font-size: 20px; /* Ajuste o tamanho da fonte */
   font-weight: bold;
 }
 
