@@ -28,7 +28,7 @@ function Informacoes() {
                 <div className='container-vermelho'>
                     <h1 className='titulozin'>Nossa Missão e Visão</h1>
                     <p className='dps-titulo'>
-                        Fomentar o espírito de equipe, a competitividade saudável e o respeito mútuo entre os participantes. Queremos que cada interclasse seja uma experiência única e inesquecível para todos os envolvidos.
+                        Comentar o espírito de equipe, a competitividade saudável e o respeito mútuo entre os participantes. Queremos que cada interclasse seja uma experiência única e inesquecível para todos os envolvidos.
                         E temos como visão, ser reconhecidos como o principal evento interclasse da região, onde a diversão, o respeito e a amizade andam de mãos dadas com a competição.
                     </p>
                     <h1 className='titulozin'>Nossos Valores</h1>
