@@ -102,3 +102,71 @@
         max-width: 300px; /* Define um valor máximo para a largura */
     }
 }
+@media (max-width: 500px) {
+    .App-info {
+        margin-left: 53px; /* Reduz o espaço lateral */
+    }
+
+    .grosso, .escrito-normal {
+        text-align: center;
+        width: 100%; /* Ajusta a largura para 100% em telas menores */
+    }
+
+    .container-vermelho {
+        padding: 10px; /* Reduz o padding interno */
+    }
+
+    .titulozin {
+        font-size: 20px; /* Ajusta o tamanho da fonte do título */
+        margin-bottom: 15px; /* Reduz o espaço abaixo do título */
+    }
+
+    .dps-titulo {
+        font-size: 16px; /* Ajusta o tamanho da fonte do parágrafo */
+        margin-bottom: 15px; /* Reduz o espaço abaixo do parágrafo */
+    }
+    .fotos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos img {
+        height: auto; /* Ajusta a altura da imagem para auto */
+        width: 100%; /* Ajusta a largura para 100% em telas menores */
+        max-width: 300px; /* Define um valor máximo para a largura */
+    }
+}
+@media (max-width: 550px) {
+    .App-info {
+        margin-left: 53px; /* Reduz o espaço lateral */
+    }
+
+    .grosso, .escrito-normal {
+        text-align: center;
+        width: 100%; /* Ajusta a largura para 100% em telas menores */
+    }
+
+    .container-vermelho {
+        padding: 10px; /* Reduz o padding interno */
+    }
+
+    .titulozin {
+        font-size: 20px; /* Ajusta o tamanho da fonte do título */
+        margin-bottom: 15px; /* Reduz o espaço abaixo do título */
+    }
+
+    .dps-titulo {
+        font-size: 16px; /* Ajusta o tamanho da fonte do parágrafo */
+        margin-bottom: 15px; /* Reduz o espaço abaixo do parágrafo */
+    }
+    .fotos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos img {
+        height: auto; /* Ajusta a altura da imagem para auto */
+        width: 100%; /* Ajusta a largura para 100% em telas menores */
+        max-width: 300px; /* Define um valor máximo para a largura */
+    }
+}
