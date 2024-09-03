@@ -101,8 +101,9 @@ function Informacoes() {
                 <br></br>
                 <br></br>
                 
+                <Footer/> 
             </div>
-            <Footer />
+            
         </div>
     );
 }

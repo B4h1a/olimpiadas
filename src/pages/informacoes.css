@@ -104,7 +104,7 @@
 }
 @media (max-width: 500px) {
     .App-info {
-        margin-left: 53px; /* Reduz o espaço lateral */
+        margin-left: 5px; /* Reduz o espaço lateral */
     }
 
     .grosso, .escrito-normal {
