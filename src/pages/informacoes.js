@@ -102,6 +102,7 @@ function Informacoes() {
                 <br></br>
                 <Footer />
             </div>
+            
         </div>
     );
 }
